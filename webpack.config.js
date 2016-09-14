@@ -39,7 +39,7 @@ module.exports = {
   postcss: [autoprefixer],
   sassLoader: {
     data: '@import "theme/_config.scss";',
-    includePaths: [path.resolve(__dirname, './src/app')]
+    includePaths: [path.resolve(__dirname, './src/main/resources')]
   },
   plugins: [
     new ExtractTextPlugin('bundle.css', { allChunks: true }),

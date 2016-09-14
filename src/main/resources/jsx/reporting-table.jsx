@@ -22,7 +22,8 @@ class ReportingTable extends React.Component {
             dataType: "text",
             url: '/head',
             success: function (data) {
-                this.setState({head: data})
+                var json = JSON.parse(data);
+                this.setState({head: json})
             }.bind(this)
         });
     }
